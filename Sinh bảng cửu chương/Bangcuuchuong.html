@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bảng cửu chương</title>
+    <style>
+        table, td, th {
+            border: 2px solid black;
+            border-collapse: collapse;
+            background-color:white;
+            color: rgba(17, 6, 6, 0.993);
+            text-align: center;
+            font-weight: bold;
+
+        }
+    </style>
+</head>
+<body>
+    <h1 style="text-align: center; color: rgb(6, 250, 67) ;">BẢNG CỬU CHƯƠNG</h1>
+    <table id="myid" style="width:100% ;">
+    </table>
+    <script>
+        var table = document.getElementById("myid");
+            value = " ";
+        for (j = 1; j <=10; j++) {
+            value += "<tr>";
+                for (i = 2; i < 10; i++) {
+                   value += "<td>" + i + "x" + j + "=" + i*j + "</td>";
+                }
+                value += "</tr>";
+        } 
+        table.innerHTML = value;  
+    </script>
+        
+</body>
+</html>
