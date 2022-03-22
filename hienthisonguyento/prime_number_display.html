@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prime Number Display</title>
+</head>
+<body>
+    <script>
+        
+function isprime(n){
+    //flag = 0 => không phải số nguyên tố
+    //flag = 1 => số nguyên tố
+        
+        let flag = 1;
+
+        if (n <2) return flag = 0; /*Số nhỏ hơn 2 không phải số nguyên tố => trả về 0*/
+        
+        /*Sử dụng vòng lặp while để kiểm tra có tồn tại ước số nào khác không*/
+        let i = 2;
+        while(i <n && i < 10000){
+        if( n%i==0 ) {
+            flag = 0;
+            break; /*Chỉ cần tìm thấy 1 ước số là đủ và thoát vòng lặp*/
+        }
+        i++;
+            }
+
+            return flag;
+        }
+
+        let n= prompt(" nhap mot so n: ");
+
+        let i = 0, check=0, result ="";
+        while ( i < n && i < 10000){
+            check = isprime(i);
+            if( check == 1 ) result += i + " ";
+            ++i;
+        }
+        console.log(result); 
+    </script>
+</body>
+</html>
