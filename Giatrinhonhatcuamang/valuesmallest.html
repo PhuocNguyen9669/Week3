@@ -3,65 +3,27 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <meta name="viewport" content="width=
+    , initial-scale=1.0">
+    <title>Value Smallest</title>
 </head>
 <body>
     <script>
-    //     var arr1 = [3, 5, 1, 8, -3, 7, 500];
+             function minArray(arr) {
+            if(arr.length == 0)
+                return -1;
+            let min = arr[0];
 
-    //     let max = findMax(arr1);
-    //     console.log(max);
-
-    //     var arr2 = [7, 12, 6, 9, 20, 56, 89]
-    //     let max2 = findMax(arr2);
-    //     console.log(max2);
-
-
-    //     function findMax(_array){
-    //         let max = _array[0]
-    //     for(let i=0; i<_array.length;i++){
-    //         if(_array[i] > max){
-    //             max = _array[i];
-    //         }
-    //     }
-    //     return max;
-    // }
-    // //kiểm tra mảng có đối xứng không
-    // var ar3 = [2, 1, 5, 1, 2];
-    // var ar4 = [2, 3, 5, 1, 2];
-    // console.log(checkDoiXung(ar3));
-    // console.log(checkDoiXung(ar4));
-
-    // function checkDoiXung(arr) {
- 
-    //     for (let i = 0; i < arr.length/2; i++) {
-    //         if (arr[i] == arr[arr.length-1-i]){
-    //             return false;
-    //         }
-    //     }
-    //     return true;
-    //     // return true or false;
-    // }
-
-    // viết hàm lấy phần từ tưhs 5 của mảng
-    var ar5 = [2, 1, 5, -1, 1, 2];
-    var ar7 = [2, -3, 5, 1, -7, 2];
-//    function vitri(arr, n){
-//        if (n < arr.length) {
-//        return arr[n];
-//       }
-//     return -1;
-//     }
-//    var index = vitri(ar5, 3);
-//    var index1 = vitri(ar7, 1);
-  
-//    console.log(index);
-//    console.log(index1);
-   // viết hàm kiển tra số nguyên tố
-   // đầu ra là 1 số nguyên tố
-   // đầu ra trả về true: la số nguyên tố, false ko là số nguyên tố
-   
-   </script>
+            for(let i = 1; i < arr.length; i++){
+                if(arr[i] < min){
+                    min = arr[i];
+                }
+            }
+                return min;
+            }
+            let arr1 = [3, 5, 1, 8, -3, 7, 8];
+            let min = minArray(arr1);
+            alert(min);
+    </script>
 </body>
 </html>
