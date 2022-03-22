@@ -7,28 +7,90 @@
     <title>Thao tác với mảng</title>
 </head>
 <body>
-    <h1>Sample Screen</h1> 
-    <input type="text" id="txtValue"> 
-    <input type="button" id="btnAdd" value="Add" onclick=" add_element_to_array()">
-    <input type="button" id="btnDisplay" value="Display" onclick="display_array()">
-    <div id="result"></div>
-    <script>
-        let x = 0;
-        let arrray = Array();
-        function add_element_to_array(){
-            arrray[x] = document.getElementById("txtValue").value;
-          alert("Element: " + arrray[x] + "Added at index" + x);
-            x++;
-            document.getAnimations("txValue").value = "";
-        }
-        function display_array() {
-            let e = "<hr/>";
-            for (let i = 0; i < array.length; i++) {
-                e += "Element " + i + " = " + array[i] + "<br/>";
-            }
-            document.getElementById("result").innerHTML = e;
-        }
-    </script>
-    
+   <script>
+        // let numbers = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
+        // let sum = 0;
+        // let i = 0;
+        // while (i < numbers.length){
+        //     sum = sum + numbers[i] ;
+        //     i++;
+        // } 
+        // alert("Tổng của mảng = " + sum);
+
+            // cho người dung nhập sai của mã, lần lượt cho người dùng nhập vào từ bàn phím
+            // let size = 10;
+            // let arr = [];
+            // //tạo ra 1 mảng có size phần tử và giá trị của mỗi phần từ được sinh ngẫu nhiên
+            // for (i=0 ; i< size; i++) {
+            //     arr[i] = Math.floor(Math.random()*41)+10;
+            // }
+            // console.log(arr);
+            // max-min +1; + min;công thức
+            //tạo mảng[35.85] -> đếm xem có nhiêu số lẻ có trong mã trên
+            // let numbers = [];
+            // let size = 10;
+            // let min = 35;
+            // let max = 85;
+            // for( let i = 0 ; i < size ; i++){
+            //     numbers[i] = Math.floor(Math.random()* max - min +1)+ min;
+            // }
+            // alert(numbers);
+            // let count = 0;
+            // for( let i = 0 ; i < size ; i++){
+            //     if(numbers[i] % 2 != 0){
+            //         count++;
+            //     }
+            // }
+            // alert(count);   
+            // tạo 1 mảng có 1 ize phần tử các giá trị đc sinh ngẫu nhiên [23,97]
+            // sau đó hiển thị có bao nhiêu số chính phương :Căn bậc 2
+            // trong mảng có bao nhiêu số nguyên tố
+            // let arr = [];
+            // let size = 10;
+            // let max = 97;
+            // let min = 23;
+            // for( let i = 0; i < size; i++) {
+            //     arr[i] = Math.floor(Math.random()* max - min +1)+ min;
+            // }
+            // console.log(arr);
+            // let countPerfectSquare = 0
+            // for( let i = 0; i < size; i++) {
+            //    if ( Number.isInteger(Math.sqrt(arr[i]))){
+            //        countPerfectSquare++;
+
+            //    }
+            // }
+            // console.log(" count perfect square: " , countPerfectSquare  )
+
+            // let countPrime = 0;
+            // for( let i = 2; i < size; i++) {
+            //     let isPrime = true;
+            //     for (let j =2; j < arr[i]; j++) {
+            //         if (arr[i] % j == 0) {
+            //             isPrime = false;
+            //             break;
+            //         }
+            //     }
+            //     if (isPrime)
+            //       scountPrime++;
+            // }
+            // console.log("count prime : " , countPrime);
+                let maxtris = [
+                    [5, 6, 7 ,8],
+                    [8, 9, 6],
+                    [1, 2, 3, 4, 5, 6, 7, 8]
+                ]
+                // maxtris[2][3]= 40;
+                // console.log(maxtris);
+               
+                for (let i=0; i<maxtris.length; i++) {
+                    for (let j=0; j<maxtris[i].length; j++) {
+                        console.log(maxtris[i][j]);
+                    }
+                }
+
+                        
+
+   </script>
 </body>
 </html>
