@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Practice creating and using the function 02.07</title>
+</head>
+<body>
+    <script>
+        function convertNumber(number) {
+            let temp;
+            for (i = 0; i < convertNumber.length/2; i++){
+                temp = number[i];
+                number[i] = number[number.length -i -1];
+                number[number.length-i-1]=temp;
+            }
+            return number;
+        }
+        let a = [1,2,3,4,5];
+        alert(convertNumber(a))
+    </script>
+</body>
+</html>

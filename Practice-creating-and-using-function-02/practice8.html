@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Practice creating and using the function 02.08</title>
+</head>
+<body>
+    <script>
+        function isInterger () {
+            let arr = [1,2,8,2,4,6,8,7];
+            let temp;
+            for(let i =0; i < arr.length/2;i++){
+                temp = arr[i];
+                arr[i] = arr[arr.length-i-1];
+                arr[arr.length-i-1] = temp;
+            }
+            return arr;
+        }
+        alert(isInterger());
+    </script>
+</body>
+</html>
