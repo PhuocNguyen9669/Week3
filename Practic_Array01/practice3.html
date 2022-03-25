@@ -1,0 +1,13 @@
+<script>
+    let Array_Value = [173,5,7,37,11,200,13,15,100];
+    let result = 0;
+    let max = Array_Value[0];
+    for(let i = 0; i < Array_Value.length; i++){
+        if(max > Array_Value[i]){
+        }else {
+            max = Array_Value[i];
+        }
+        result += Array_Value[i];
+    }
+    alert(`Phần tử có giá trị lớn nhất là ${max} Trung bình của mảng là ${(result/Array_Value.length).toFixed(2)}`);
+</script>

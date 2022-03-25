@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Practice Array 01.01</title>
+</head>
+<body>
+    <script>
+        let Array = [1,15,5,7,12,4,9,10,8];
+        count = 0;
+        result = "";
+            for (let i=0; i < Array.length;i++) {
+                    if (Array[i] >= 10){
+                        console.log(Array[i])
+                        count++;
+                        result += i + " ";
+                    }                  
+            }
+            alert (`Mảng có ${count} phần tử lớn hơn hoặc bằng 10 là : ${result}`);
+    </script>
+</body>
+</html>
